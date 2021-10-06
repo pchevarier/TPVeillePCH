@@ -22,10 +22,9 @@ def cnx(users):
   psw = getpass(prompt='Password: ')
   ret = 0
   msg ="Username ou mot de passe incorrect"
-  if (usr in users):
-    if(psw==users[usr]):
-      ret = 1
-      msg = "Bienvenue "+usr
+  if ((usr in users) and (psw==users[usr])):
+    ret = 1
+     msg = "Bienvenue "+usr
   
   return ret,msg
 
