@@ -3,7 +3,7 @@ strvar = "sfjofjdsjf"
 list = [1,2,3,"fin"]
 
 data_count +=1
-strvar+str(data_count)
+#strvar+str(data_count)
 if(data_count>1):
   print(data_count)
   print("if")
